@@ -687,31 +687,43 @@ def inject_global_styles() -> None:
             color: var(--or-text-secondary);
         }
 
-        .or-utility-section [data-testid="stTextArea"] textarea {
-            min-height: 260px;
-            background: linear-gradient(180deg, rgba(12, 12, 12, 0.98), rgba(9, 9, 9, 0.98));
-            border: 1px solid rgba(38, 38, 38, 0.78);
-            border-radius: 16px;
-            color: var(--or-text-main);
-            padding: 1rem 1.05rem;
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
+        .or-utility-section [data-testid="stTextArea"] [data-baseweb="textarea"] {
+            background: linear-gradient(180deg, rgba(12, 12, 12, 0.98), rgba(9, 9, 9, 0.98)) !important;
+            border: 1px solid rgba(38, 38, 38, 0.88) !important;
+            border-radius: 16px !important;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02) !important;
             transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
         }
 
+        .or-utility-section [data-testid="stTextArea"] textarea {
+            min-height: 260px;
+            background: transparent !important;
+            border: none !important;
+            border-radius: 16px !important;
+            color: var(--or-text-main) !important;
+            -webkit-text-fill-color: var(--or-text-main) !important;
+            caret-color: var(--or-text-main) !important;
+            padding: 1rem 1.05rem !important;
+            box-shadow: none !important;
+            outline: none !important;
+            transition: color 0.18s ease;
+        }
+
         .or-utility-section [data-testid="stTextArea"] textarea::placeholder {
-            color: #6F6F76;
+            color: #6F6F76 !important;
             opacity: 1;
+            -webkit-text-fill-color: #6F6F76;
         }
 
-        .or-utility-section [data-testid="stTextArea"] textarea:hover {
-            border-color: rgba(58, 58, 58, 0.9);
-            background: linear-gradient(180deg, rgba(14, 14, 14, 0.99), rgba(10, 10, 10, 0.99));
+        .or-utility-section [data-testid="stTextArea"]:hover [data-baseweb="textarea"] {
+            border-color: rgba(58, 58, 58, 0.9) !important;
+            background: linear-gradient(180deg, rgba(14, 14, 14, 0.99), rgba(10, 10, 10, 0.99)) !important;
         }
 
-        .or-utility-section [data-testid="stTextArea"] textarea:focus {
-            border-color: rgba(92, 92, 92, 0.92);
-            box-shadow: 0 0 0 0.16rem rgba(245, 245, 245, 0.05);
-            outline: none;
+        .or-utility-section [data-testid="stTextArea"]:focus-within [data-baseweb="textarea"] {
+            border-color: rgba(92, 92, 92, 0.92) !important;
+            box-shadow: 0 0 0 0.16rem rgba(245, 245, 245, 0.05) !important;
+            outline: none !important;
         }
 
         .or-utility-section .stButton {
