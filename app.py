@@ -559,6 +559,180 @@ def inject_global_styles() -> None:
             margin-top: 0.2rem;
         }
 
+        .or-table-shell {
+            border: 1px solid var(--or-border);
+            border-radius: var(--or-radius-lg);
+            background: linear-gradient(180deg, rgba(11, 11, 11, 0.96), rgba(8, 8, 8, 0.99));
+            overflow: hidden;
+        }
+
+        .or-table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .or-table thead {
+            background: rgba(14, 14, 14, 0.98);
+        }
+
+        .or-table th {
+            color: var(--or-text-tertiary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-size: 0.7rem;
+            text-align: left;
+            padding: 0.95rem 1rem;
+            border-bottom: 1px solid rgba(38, 38, 38, 0.9);
+        }
+
+        .or-table td {
+            color: var(--or-text-main);
+            padding: 1rem;
+            border-bottom: 1px solid rgba(28, 28, 28, 0.6);
+            vertical-align: top;
+            word-break: break-word;
+        }
+
+        .or-table tbody tr:hover {
+            background: rgba(16, 16, 16, 0.96);
+        }
+
+        .or-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .or-table-empty {
+            color: var(--or-text-secondary);
+            text-align: center;
+            padding: 1.2rem 1rem;
+        }
+
+        .or-table-link {
+            color: var(--or-text-secondary);
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+        }
+
+        .or-table-link:hover {
+            color: var(--or-text-main);
+        }
+
+        .or-button-link {
+            min-height: 48px;
+            border-radius: 999px;
+            border: 1px solid var(--or-border-muted);
+            background: linear-gradient(180deg, #151515 0%, #0E0E0E 100%);
+            color: var(--or-text-main);
+            font-weight: 600;
+            letter-spacing: 0.01em;
+            padding: 0.7rem 1.05rem;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            text-decoration: none;
+            box-sizing: border-box;
+            transition: border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+        }
+
+        .or-button-link:hover {
+            border-color: #3A3A3A;
+            background: linear-gradient(180deg, #181818 0%, #111111 100%);
+            color: var(--or-text-main);
+            text-decoration: none;
+        }
+
+        .or-button-link:focus,
+        .or-button-link:focus-visible {
+            outline: none;
+            box-shadow: 0 0 0 0.18rem rgba(245, 245, 245, 0.08);
+        }
+
+        .or-utility-section {
+            background: linear-gradient(180deg, rgba(10, 10, 10, 0.9), rgba(7, 7, 7, 0.96));
+            border-color: rgba(28, 28, 28, 0.85);
+            box-shadow: none;
+        }
+
+        .or-utility-section .or-section-header {
+            margin-bottom: 0.8rem;
+        }
+
+        .or-utility-section .or-section-title {
+            font-size: 1.2rem;
+        }
+
+        .or-utility-section .or-section-copy {
+            max-width: 620px;
+            color: var(--or-text-tertiary);
+        }
+
+        .or-utility-section [data-testid="stTextArea"] {
+            background: rgba(9, 9, 9, 0.82);
+            border: 1px solid rgba(38, 38, 38, 0.8);
+            border-radius: 20px;
+            padding: 0.8rem;
+            margin-top: 0.15rem;
+        }
+
+        .or-utility-section [data-testid="stTextArea"] label {
+            font-size: 0.74rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--or-text-secondary);
+        }
+
+        .or-utility-section [data-testid="stTextArea"] textarea {
+            min-height: 260px;
+            background: linear-gradient(180deg, rgba(12, 12, 12, 0.98), rgba(9, 9, 9, 0.98));
+            border: 1px solid rgba(38, 38, 38, 0.78);
+            border-radius: 16px;
+            color: var(--or-text-main);
+            padding: 1rem 1.05rem;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
+            transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+        }
+
+        .or-utility-section [data-testid="stTextArea"] textarea::placeholder {
+            color: #6F6F76;
+            opacity: 1;
+        }
+
+        .or-utility-section [data-testid="stTextArea"] textarea:hover {
+            border-color: rgba(58, 58, 58, 0.9);
+            background: linear-gradient(180deg, rgba(14, 14, 14, 0.99), rgba(10, 10, 10, 0.99));
+        }
+
+        .or-utility-section [data-testid="stTextArea"] textarea:focus {
+            border-color: rgba(92, 92, 92, 0.92);
+            box-shadow: 0 0 0 0.16rem rgba(245, 245, 245, 0.05);
+            outline: none;
+        }
+
+        .or-utility-section .stButton {
+            margin-top: 0.6rem;
+        }
+
+        .or-utility-section .stButton > button {
+            background: #111111;
+            border: 1px solid rgba(38, 38, 38, 0.9);
+            box-shadow: none;
+        }
+
+        .or-utility-section .stButton > button:hover {
+            background: #151515;
+            border-color: rgba(58, 58, 58, 0.95);
+        }
+
+        .or-utility-section .stButton > button:focus {
+            box-shadow: 0 0 0 0.18rem rgba(245, 245, 245, 0.06);
+        }
+
         @media (max-width: 1100px) {
             .opportunity-card-header,
             .opportunity-card-meta-item {
@@ -604,6 +778,25 @@ def inject_global_styles() -> None:
             [data-testid="stDataFrame"] [role="gridcell"] {
                 white-space: normal !important;
                 word-break: break-word !important;
+            }
+
+            .or-table {
+                table-layout: auto;
+            }
+
+            .or-table th,
+            .or-table td {
+                padding: 0.8rem 0.75rem;
+                white-space: normal;
+            }
+
+            .or-utility-section [data-testid="stTextArea"] {
+                padding: 0.65rem;
+            }
+
+            .or-utility-section [data-testid="stTextArea"] textarea {
+                min-height: 220px;
+                padding: 0.9rem 0.95rem;
             }
         }
         </style>
@@ -734,17 +927,73 @@ def build_results_count_copy(total_matching_jobs: int, displayed_jobs: int) -> s
     return f"{displayed_jobs} product roles evaluated"
 
 
+def render_dark_table(
+    rows: list[dict[str, object]],
+    columns: list[tuple[str, str]],
+    *,
+    empty_message: str,
+    link_columns: dict[str, str] | None = None,
+) -> None:
+    """Render a dark themed HTML table to avoid native light Streamlit table chrome."""
+    header_markup = "".join(f"<th>{escape(label)}</th>" for _, label in columns)
+    link_columns = link_columns or {}
+
+    if rows:
+        body_rows: list[str] = []
+        for row in rows:
+            cells: list[str] = []
+            for key, _ in columns:
+                value = row.get(key, "")
+                if key in link_columns:
+                    href = str(value).strip()
+                    label = escape(link_columns[key])
+                    if href:
+                        cell_markup = (
+                            f'<a class="or-table-link" href="{escape(href, quote=True)}" '
+                            f'target="_blank" rel="noopener noreferrer">{label}</a>'
+                        )
+                    else:
+                        cell_markup = '<span class="or-subtle-text">Unavailable</span>'
+                else:
+                    cell_markup = escape(str(value))
+                cells.append(f"<td>{cell_markup}</td>")
+            body_rows.append(f"<tr>{''.join(cells)}</tr>")
+        body_markup = "".join(body_rows)
+    else:
+        body_markup = (
+            f'<tr><td class="or-table-empty" colspan="{len(columns)}">{escape(empty_message)}</td></tr>'
+        )
+
+    st.markdown(
+        f"""
+        <div class="or-table-shell">
+            <table class="or-table">
+                <thead>
+                    <tr>{header_markup}</tr>
+                </thead>
+                <tbody>
+                    {body_markup}
+                </tbody>
+            </table>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
 def render_job_posting_actions(job_url: str) -> None:
     """Render clean actions for opening and copying a job posting URL."""
     action_col, copy_col, _ = st.columns([1.35, 1, 3.65])
 
     with action_col:
-        st.link_button(
-            "Open job posting",
-            job_url,
-            type="secondary",
-            use_container_width=True,
-            help="Open the original posting in a new browser tab.",
+        st.markdown(
+            (
+                f'<a class="or-button-link" href="{escape(job_url, quote=True)}" '
+                'target="_blank" rel="noopener noreferrer" title="Open the original posting in a new browser tab.">'
+                "Open job posting"
+                "</a>"
+            ),
+            unsafe_allow_html=True,
         )
 
     with copy_col:
@@ -1158,23 +1407,19 @@ else:
         ),
         unsafe_allow_html=True,
     )
-    st.dataframe(
+    render_dark_table(
         summary_rows,
-        use_container_width=True,
-        hide_index=True,
-        column_config={
-            "company": "Company",
-            "title": "Title",
-            "location": "Location",
-            "fit_score": st.column_config.NumberColumn("Fit Score", format="%d"),
-            "opportunity_tier": "Opportunity Tier",
-            "apply_priority": "Apply Priority",
-            "job_link": st.column_config.LinkColumn(
-                "Job Link",
-                width="small",
-                display_text="Open →",
-            ),
-        },
+        [
+            ("company", "Company"),
+            ("title", "Title"),
+            ("location", "Location"),
+            ("fit_score", "Fit Score"),
+            ("opportunity_tier", "Opportunity Tier"),
+            ("apply_priority", "Apply Priority"),
+            ("job_link", "Job Link"),
+        ],
+        empty_message="No tracked jobs match the current filters.",
+        link_columns={"job_link": "Open ->"},
     )
 
     st.markdown(
@@ -1221,25 +1466,15 @@ else:
                     '<div class="or-detail-heading" style="margin-top: 1rem;">Weighted Score Breakdown</div>',
                     unsafe_allow_html=True,
                 )
-                st.dataframe(
+                render_dark_table(
                     build_weighted_score_rows(job),
-                    use_container_width=True,
-                    hide_index=True,
-                    column_config={
-                        "Factor": "Factor",
-                        "Raw score out of 10": st.column_config.NumberColumn(
-                            "Raw score out of 10",
-                            format="%.1f",
-                        ),
-                        "Weight %": st.column_config.NumberColumn(
-                            "Weight %",
-                            format="%d%%",
-                        ),
-                        "Weighted contribution": st.column_config.NumberColumn(
-                            "Weighted contribution",
-                            format="%.1f",
-                        ),
-                    },
+                    [
+                        ("Factor", "Factor"),
+                        ("Raw score out of 10", "Raw score out of 10"),
+                        ("Weight %", "Weight %"),
+                        ("Weighted contribution", "Weighted contribution"),
+                    ],
+                    empty_message="No weighted score breakdown is available for this role.",
                 )
 
                 st.markdown(
@@ -1274,12 +1509,12 @@ st.divider()
 
 st.markdown(
     """
-    <section class="or-section">
+    <section class="or-section or-utility-section">
         <div class="or-section-header">
             <div class="or-section-kicker">Role Analysis</div>
             <div class="or-section-title">Analyze a role</div>
             <div class="or-section-copy">
-                Paste a job description to evaluate it using the same scoring model.
+                Paste a role description to score it using the same evaluation framework.
             </div>
         </div>
     """,
@@ -1287,9 +1522,9 @@ st.markdown(
 )
 
 job_description = st.text_area(
-    "Job Description",
+    "Role description",
     height=300,
-    placeholder="Paste the full job description here...",
+    placeholder="Paste the full role description here...",
 )
 
 if st.button("Analyze Job", type="primary", use_container_width=True):
