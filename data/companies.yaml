@@ -1,0 +1,22 @@
+companies:
+  # These are example companies to seed the tracker with.
+  # Career page URLs can change over time, so treat them as editable config.
+  - name: OpenAI
+    ats: ashby
+    careers_url: https://jobs.ashbyhq.com/OpenAI
+
+  - name: Anthropic
+    ats: ashby
+    careers_url: https://jobs.ashbyhq.com/Anthropic
+
+  - name: Cohere
+    ats: lever
+    careers_url: https://jobs.lever.co/cohere
+
+  - name: Scale AI
+    ats: greenhouse
+    careers_url: https://boards.greenhouse.io/scaleai
+
+  - name: Perplexity
+    ats: greenhouse
+    careers_url: https://boards.greenhouse.io/perplexityai

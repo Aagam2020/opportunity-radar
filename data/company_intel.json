@@ -1,0 +1,50 @@
+{
+  "OpenAI": {
+    "category": "Frontier AI Lab",
+    "prestige_score": 10,
+    "ai_relevance": 10,
+    "startup_upside": 9
+  },
+  "Anthropic": {
+    "category": "Frontier AI Lab",
+    "prestige_score": 10,
+    "ai_relevance": 10,
+    "startup_upside": 9
+  },
+  "Scale AI": {
+    "category": "Data Labeling Platform",
+    "prestige_score": 8,
+    "ai_relevance": 9,
+    "startup_upside": 8
+  },
+  "Perplexity": {
+    "category": "AI Search",
+    "prestige_score": 8,
+    "ai_relevance": 9,
+    "startup_upside": 9
+  },
+  "Cohere": {
+    "category": "Enterprise AI Platform",
+    "prestige_score": 8,
+    "ai_relevance": 9,
+    "startup_upside": 7
+  },
+  "Adept": {
+    "category": "AI Agents",
+    "prestige_score": 7,
+    "ai_relevance": 8,
+    "startup_upside": 8
+  },
+  "Mistral": {
+    "category": "Open-Weight Frontier AI Lab",
+    "prestige_score": 9,
+    "ai_relevance": 10,
+    "startup_upside": 9
+  },
+  "Hugging Face": {
+    "category": "Open Model Platform",
+    "prestige_score": 9,
+    "ai_relevance": 10,
+    "startup_upside": 7
+  }
+}
