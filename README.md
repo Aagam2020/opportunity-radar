@@ -1,3 +1,6 @@
+Live app:
+https://opportunity-radar.streamlit.app
+
 # Opportunity Radar
 
 Opportunity Radar is a small Streamlit app that analyzes product manager job descriptions with the OpenAI API and returns a structured score.
